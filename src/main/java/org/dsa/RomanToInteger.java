@@ -1,8 +1,5 @@
 package org.dsa;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class RomanToInteger {
     public static int romanToInt(String s) {
         int sum =0 ;
