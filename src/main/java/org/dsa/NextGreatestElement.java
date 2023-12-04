@@ -23,7 +23,6 @@ public class NextGreatestElement {
         }
         for(int i=0;i<nums1.length;i++){
             nums1[i]=map.get(nums1[i]);
-            System.out.println(map.get(nums1[i]));
         }
         return nums1;
     }
