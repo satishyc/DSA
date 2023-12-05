@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class MajorityElement {
     /**
-     * Problem Link https://www.codingninjas.com/studio/problems/majority-element_6783241
+     * Problem Link https://leetcode.com/problems/majority-element/
      * **/
     public static int majorityElement(int []values) {
         // Write your code here
@@ -13,10 +13,8 @@ public class MajorityElement {
         Map<Integer,Integer> map = new HashMap<>();
         for(int v : values){
             map.put(v,map.getOrDefault(v,0)+1);
-        }
-        for(Map.Entry<Integer,Integer> entry : map.entrySet()){
-            if(entry.getValue()>=(n/2)){
-                return entry.getKey();
+            if(map.get(v)>(n/2)){
+                return v;
             }
         }
         return -1;
@@ -24,7 +22,7 @@ public class MajorityElement {
     }
 
     public static void main(String[] args) {
-        int[] values = new int[]{58,58,28,95,95,15,58,58,98};
+        int[] values = new int[]{2,2,1,1,1,2,2};
         System.out.println(majorityElement(values));
     }
 }
