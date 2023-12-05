@@ -1,9 +1,6 @@
 package org.dsa;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MajorityElement2 {
     /**
@@ -24,11 +21,40 @@ public class MajorityElement2 {
         }
         return result;
     }
+    public static List<Integer> majorityElementOptimal(int[] nums){
+        List<Integer> result = new ArrayList<>();
+        Arrays.sort(nums);
+        int n = nums.length;
+        int majority = n/3;
+        int count = 1;
+        for(int i=1;i<n;i++){
+            if(nums[i]==nums[i-1]){
+                count++;
+            }
+            else{
+                if(count>majority){
+                    result.add(nums[i-1]);
+                }
+                count=1;
+            }
+        }
+        if(count>majority){
+            result.add(nums[n-1]);
+        }
+
+
+        return result;
+    }
 
     public static void main(String[] args) {
         List<Integer> res;
-        int[] nums = new int[]{1,2,1,2,1,1,1};
+        int[] nums = new int[]{1};
         res = majorityElement(nums);
+        for(int r : res){
+            System.out.print(" "+r);
+        }
+        System.out.println();
+        res = majorityElementOptimal(nums);
         for(int r : res){
             System.out.print(" "+r);
         }
