@@ -1,4 +1,4 @@
-package org.dsa;
+package org.dsa.Strings;
 
 public class ValidAnagram {
     /*

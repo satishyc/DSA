@@ -1,4 +1,4 @@
-package org.dsa;
+package org.dsa.Strings;
 
 import org.junit.Assert;
 import org.junit.Test;

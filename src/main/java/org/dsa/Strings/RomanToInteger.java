@@ -1,4 +1,4 @@
-package org.dsa;
+package org.dsa.Strings;
 
 public class RomanToInteger {
     public static int romanToInt(String s) {

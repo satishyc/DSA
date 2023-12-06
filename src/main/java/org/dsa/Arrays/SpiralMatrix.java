@@ -1,4 +1,4 @@
-package org.dsa;
+package org.dsa.Arrays;
 
 public class SpiralMatrix {
     public static void printSpiralMatrix(int[][] matrix){
