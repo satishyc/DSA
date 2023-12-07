@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class NextGreatestElement {
-    /*
-    * Problem Link https://leetcode.com/problems/next-greater-element-i/description/
-    * */
+    /**
+     * Problem Link <a href="https://leetcode.com/problems/next-greater-element-i/description/">...</a>
+     * */
     public static int[] nextGreaterElement(int[] nums1, int[] nums2) {
         Map<Integer,Integer> map = new HashMap<>();
         int n = nums2.length;

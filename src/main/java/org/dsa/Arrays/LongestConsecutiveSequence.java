@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class LongestConsecutiveSequence {
     /**
-     * Problem Link https://leetcode.com/problems/longest-consecutive-sequence/description/
+     * Problem Link <a href="https://leetcode.com/problems/longest-consecutive-sequence/description/">...</a>
      * */
     public static int longestConsecutive(int[] nums) {
         if(nums.length == 0){

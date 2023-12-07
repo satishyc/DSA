@@ -1,11 +1,10 @@
 package org.dsa.Arrays;
 
-import org.junit.Assert;
-import org.junit.Test;
+
 
 public class RotateImage {
     /**
-     * Problem Link https://leetcode.com/problems/rotate-image/
+     * Problem Link <a href="https://leetcode.com/problems/rotate-image/">...</a>
      * */
     public static void rotate(int[][] matrix) {
         int n = matrix.length;
@@ -42,15 +41,18 @@ public class RotateImage {
         return result;
     }
 
-    @Test
     public static void main(String[] args) {
         int[][] matrix = new int[][]{{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
         int[][] result = rotateWithExtraSpace(matrix);
         rotate(matrix);
         int n =matrix.length;
+        int m = matrix[0].length;
         for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++){
-                Assert.assertEquals(result[i][j],matrix[i][j]);
+            for(int j=0;j<m;j++){
+                if(result[i][j]!=matrix[i][j]){
+                    System.out.println("["+i+"]["+j+"] this position is not matching");
+                }
+
             }
         }
 

@@ -4,7 +4,7 @@ import java.util.*;
 
 public class NextSmallerElement {
     /***
-     * Problem Link https://www.interviewbit.com/problems/nearest-smaller-element/
+     * Problem Link <a href="https://www.interviewbit.com/problems/nearest-smaller-element/">...</a>
      * */
     public static ArrayList<Integer> prevSmaller(ArrayList<Integer> A) {
         ArrayList<Integer> result = new ArrayList<>();
