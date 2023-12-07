@@ -10,8 +10,8 @@ public class NextSmallerElement {
         ArrayList<Integer> result = new ArrayList<>();
         Stack<Integer> stack = new Stack<>();
 
-        for (int i = 0; i < A.size(); i++) {
-            while (!stack.isEmpty() && stack.peek() >= A.get(i)) {
+        for (Integer integer : A) {
+            while (!stack.isEmpty() && stack.peek() >= integer) {
                 stack.pop();
             }
 
@@ -21,7 +21,7 @@ public class NextSmallerElement {
                 result.add(stack.peek());
             }
 
-            stack.push(A.get(i));
+            stack.push(integer);
         }
 
 

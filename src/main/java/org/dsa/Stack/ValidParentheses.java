@@ -29,7 +29,7 @@ public class ValidParentheses {
                 return false;
             }
         }
-        return stk.isEmpty()?true:false;
+        return stk.isEmpty();
     }
 
     public static void main(String[] args) {

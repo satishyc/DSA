@@ -2,7 +2,7 @@ package org.dsa.Strings;
 
 public class LongestCommonPrefix {
     /**
-     * * Problem Link https://leetcode.com/problems/longest-common-prefix/description/
+     * * Problem Link <a href="https://leetcode.com/problems/longest-common-prefix/description/">...</a>
      * */
     public static String longestCommonPrefix(String[] strs) {
         int n = strs.length;

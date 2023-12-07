@@ -12,6 +12,7 @@ public class TopKFrequentElements {
             map.put(num,map.getOrDefault(num,0)+1);
         }
         List<Map.Entry<Integer,Integer>> entryList = new ArrayList<>(map.entrySet());
+        //noinspection Java8ListSort
         Collections.sort(entryList,Map.Entry.<Integer, Integer>comparingByValue().reversed());
         int i=0;
         int[] result = new int[k];

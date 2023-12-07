@@ -1,8 +1,7 @@
 package org.dsa.Strings;
 
-import org.junit.Assert;
-import org.junit.Test;
 
+import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -13,17 +12,17 @@ public class IntegerToRoman {
         if(num<=0 || num>=3999){
             return null;
         }
-        String result = "";
+        StringBuilder result = new StringBuilder();
         int position = 0;
         while(num>0){
             if(num%10 !=0){
-                result=getRoman(num%10,position)+result;
+                result.insert(0, getRoman(num % 10, position));
             }
             num=num/10;
             position++;
 
         }
-        return result;
+        return result.toString();
     }
     public static String getRoman(int val,int position){
         if(val>=1 && val<=3){
@@ -49,16 +48,13 @@ public class IntegerToRoman {
                 .collect(Collectors.joining());
     }
 
-    @Test
     public static void main(String[] args) {
 
-        Assert.assertEquals(intToRoman(3),"III");
-        Assert.assertEquals(intToRoman(300),"CCC");
-        Assert.assertEquals(intToRoman(4003),null);
-        Assert.assertEquals(intToRoman(123),"CXXIII");
-        Assert.assertEquals(intToRoman(896),"DCCCXLVI");
-
-
+         System.out.println(Objects.requireNonNull(intToRoman(3)).equals("III"));
+         System.out.println(Objects.requireNonNull(intToRoman(300)).equals("CCC"));
+         System.out.println(intToRoman(4003)==null);
+         System.out.println(Objects.requireNonNull(intToRoman(123)).equals("CXXIII"));
+         System.out.println(Objects.requireNonNull(intToRoman(896)).equals("DCCCXLVI"));
 
     }
 }
