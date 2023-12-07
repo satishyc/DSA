@@ -1,12 +1,12 @@
-package org.dsa;
+package org.dsa.Arrays;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CountAndSay {
-    /*
-    * Problem link https://leetcode.com/problems/count-and-say/description/
-    * */
+    /**
+     * Problem link <a href="https://leetcode.com/problems/count-and-say/description/">...</a>
+     * */
     public static String countAndSay(int n) {
         List<List<String>> chars = new ArrayList<>(n);
         List<String> list = new ArrayList<>();

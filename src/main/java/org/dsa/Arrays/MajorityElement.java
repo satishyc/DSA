@@ -1,11 +1,11 @@
-package org.dsa;
+package org.dsa.Arrays;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class MajorityElement {
     /**
-     * Problem Link https://leetcode.com/problems/majority-element/
+     * Problem Link <a href="https://leetcode.com/problems/majority-element/">...</a>
      * **/
     public static int majorityElement(int []values) {
         // Write your code here

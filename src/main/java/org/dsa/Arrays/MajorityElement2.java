@@ -1,10 +1,14 @@
-package org.dsa;
+package org.dsa.Arrays;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class MajorityElement2 {
     /**
-     * Problem Link https://leetcode.com/problems/majority-element-ii/description/
+     * Problem Link <a href="https://leetcode.com/problems/majority-element-ii/description/">...</a>
      * **/
     public static List<Integer> majorityElement(int[] nums) {
         List<Integer> result = new ArrayList<>();
