@@ -1,4 +1,4 @@
-package org.dsa.Math;
+package org.dsa.math;
 
 public class Pow {
     /**

@@ -1,4 +1,4 @@
-package org.dsa.Arrays;
+package org.dsa.arrays;
 
 import java.util.HashMap;
 import java.util.Map;

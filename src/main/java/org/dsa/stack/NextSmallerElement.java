@@ -1,4 +1,4 @@
-package org.dsa.Stack;
+package org.dsa.stack;
 
 import java.util.*;
 

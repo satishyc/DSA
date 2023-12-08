@@ -1,4 +1,4 @@
-package org.dsa.Strings;
+package org.dsa.strings;
 
 
 import java.util.Objects;
