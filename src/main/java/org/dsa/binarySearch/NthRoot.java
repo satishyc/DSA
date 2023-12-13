@@ -2,7 +2,7 @@ package org.dsa.binarySearch;
 
 public class NthRoot {
     /**
-     * Problem Link https://www.codingninjas.com/studio/problems/1062679
+     * Problem Link <a href="https://www.codingninjas.com/studio/problems/1062679">...</a>
      * */
     public static int NthRoot(int n, int m) {
         int low = 1;
