@@ -10,27 +10,25 @@ public class SearchInRotatedSortedArray {
         int high = nums.length-1;
         int mid = 0;
         while(low<=high){
-            if(nums[low]<nums[high]){
-                mid=(low+high)/2;
-                if(nums[mid]==target){
-                    return mid;
-                }
-                else if(nums[mid]>target){
+            mid=(low+high)/2;
+            if(nums[mid]==target){
+                return mid;
+            }
+            else if(nums[low]<=nums[mid]){
+                if(target>=nums[low] || target<nums[mid]){
                     high=mid-1;
                 }
                 else{
                     low=mid+1;
                 }
             }
-            else {
-                if(nums[low]==target){
-                    return low;
+            else{
+                if(target>nums[mid] || target<=nums[high]){
+                    low=mid+1;
                 }
-                else if(nums[high]==target){
-                    return high;
+                else{
+                    high=mid-1;
                 }
-                low++;
-                high--;
             }
 
         }
