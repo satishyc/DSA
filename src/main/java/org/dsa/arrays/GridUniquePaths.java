@@ -1,9 +1,6 @@
 package org.dsa.arrays;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * Problem Link <a href="https://leetcode.com/problems/unique-paths/description/"></a>
@@ -40,12 +37,6 @@ public class GridUniquePaths {
         }
         return (int)res;
     }
-    public static BigInteger factorial(int n){
-        BigInteger result = BigInteger.valueOf(1);
-        for(int i=1;i<=n;i++){
-            result=result.multiply(BigInteger.valueOf(i));
-        }
-        return result;
-    }
+
 
 }
